@@ -20,7 +20,8 @@ export default defineConfig({
     AutoImport({
       imports: ['vue', VueRouterAutoImports, '@vueuse/core'],
       dirs: ['src/composables'],
-      dts: 'src/auto-imports.d.ts'
+      dts: 'src/auto-imports.d.ts',
+      vueTemplate: true
     }),
     Components({
       extensions: ['vue', 'md'],
