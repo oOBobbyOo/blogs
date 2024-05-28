@@ -7,12 +7,22 @@
     </div>
     <nav class="nav">
       <div class="spacer" />
-      <DarkMode />
+      <div class="right" print:op0>
+        <a
+          href="https://github.com/oOBobbyOo"
+          target="_blank"
+          title="GitHub"
+          class="lt-md:hidden"
+        >
+          <div i-uil-github-alt />
+        </a>
+        <DarkMode />
+      </div>
     </nav>
   </header>
 </template>
 
-<style scoped>
+<style scoped lang="less">
 .logo {
   position: absolute;
   top: 1.5rem;
@@ -25,5 +35,25 @@ nav {
   display: grid;
   grid-template-columns: auto max-content;
   box-sizing: border-box;
+
+  .right {
+    display: grid;
+    grid-gap: 1.2rem;
+    grid-auto-flow: column;
+  }
+
+  a {
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+    transition: opacity 0.2s ease;
+    opacity: 0.6;
+    outline: none;
+
+    &:hover {
+      opacity: 1;
+      text-decoration-color: inherit;
+    }
+  }
 }
 </style>
