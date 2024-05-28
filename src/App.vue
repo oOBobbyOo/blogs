@@ -1,12 +1,4 @@
-<script setup lang="ts">
-</script>
-
 <template>
-  <div w-full h-full>
-    app
-  </div>
+ <RouterView />
 </template>
 
-<style scoped>
-
-</style>
