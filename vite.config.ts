@@ -18,14 +18,14 @@ export default defineConfig({
     }),
     vue(),
     AutoImport({
-      imports: ['vue', VueRouterAutoImports],
+      imports: ['vue', VueRouterAutoImports, '@vueuse/core'],
       dirs: ['src/composables'],
       dts: 'src/auto-imports.d.ts'
     }),
     Components({
       extensions: ['vue', 'md'],
       include: [/\.vue$/, /\.vue\?vue/, /\.md$/],
-      dts: 'src/components.d.ts',
+      dts: 'src/components.d.ts'
     })
   ],
   resolve: {
