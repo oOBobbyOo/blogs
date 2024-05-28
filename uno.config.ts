@@ -5,7 +5,7 @@ import {
   presetTypography,
   presetUno,
   transformerDirectives,
-  transformerVariantGroup
+  transformerVariantGroup,
 } from 'unocss'
 
 export default defineConfig({
@@ -15,9 +15,9 @@ export default defineConfig({
     presetAttributify(),
     presetIcons({
       scale: 1.2,
-      warn: true
+      warn: true,
     }),
     presetTypography(),
   ],
-  transformers: [transformerDirectives(), transformerVariantGroup()]
+  transformers: [transformerDirectives(), transformerVariantGroup()],
 })

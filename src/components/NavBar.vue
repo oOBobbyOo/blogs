@@ -2,7 +2,9 @@
 
 <template>
   <header class="header z-9">
-    <div class="logo">logo</div>
+    <div class="logo">
+      logo
+    </div>
     <nav class="nav">
       <div class="spacer" />
       <DarkMode />

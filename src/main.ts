@@ -10,7 +10,7 @@ const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   extendRoutes: (routes) => {
     return routes
-  }
+  },
 })
 
 const app = createApp(App)

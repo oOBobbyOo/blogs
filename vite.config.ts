@@ -14,24 +14,24 @@ export default defineConfig({
     UnoCSS(),
     VueRouter({
       extensions: ['.vue', '.md'],
-      dts: 'src/typed-router.d.ts'
+      dts: 'src/typed-router.d.ts',
     }),
     vue(),
     AutoImport({
       imports: ['vue', VueRouterAutoImports, '@vueuse/core'],
       dirs: ['src/composables'],
       dts: 'src/auto-imports.d.ts',
-      vueTemplate: true
+      vueTemplate: true,
     }),
     Components({
       extensions: ['vue', 'md'],
       include: [/\.vue$/, /\.vue\?vue/, /\.md$/],
-      dts: 'src/components.d.ts'
-    })
+      dts: 'src/components.d.ts',
+    }),
   ],
   resolve: {
     alias: {
-      '@': resolve(__dirname, 'src')
-    }
-  }
+      '@': resolve(__dirname, 'src'),
+    },
+  },
 })
