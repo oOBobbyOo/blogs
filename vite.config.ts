@@ -1,4 +1,6 @@
 import { resolve } from 'node:path'
+import fs from 'fs-extra'
+import matter from 'gray-matter'
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import UnoCSS from 'unocss/vite'
@@ -19,6 +21,19 @@ export default defineConfig({
     VueRouter({
       extensions: ['.vue', '.md'],
       dts: 'src/typed-router.d.ts',
+      logs: true,
+      extendRoute(route) {
+        const path = route.components.get('default')
+        if (!path)
+          return
+
+        if (!path.includes('projects.md') && path.endsWith('.md')) {
+          const { data } = matter(fs.readFileSync(path, 'utf-8'))
+          route.addToMeta({
+            frontmatter: data,
+          })
+        }
+      },
     }),
     vue({
       include: [/\.vue$/, /\.md$/],
