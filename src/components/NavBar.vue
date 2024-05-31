@@ -7,7 +7,11 @@
     </div>
     <nav class="nav">
       <div class="spacer" />
-      <div class="right" print:op0>
+      <div class="right" flex items-center print:op0>
+        <RouterLink to="/posts" title="Blog">
+          <span class="lt-md:hidden">Blog</span>
+          <div i-ri-article-line md:hidden />
+        </RouterLink>
         <a
           href="https://github.com/oOBobbyOo"
           target="_blank"
