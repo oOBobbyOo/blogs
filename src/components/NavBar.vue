@@ -1,10 +1,15 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+</script>
 
 <template>
   <header class="header z-9">
-    <div class="logo">
-      logo
-    </div>
+    <RouterLink
+      class="absolute left-2 top-2 m-5 w-16 select-none outline-none xl:fixed"
+      to="/"
+      focusable="false"
+    >
+      <Logo />
+    </RouterLink>
     <nav class="nav">
       <div class="spacer" />
       <div class="right" flex items-center print:op0>
@@ -27,12 +32,6 @@
 </template>
 
 <style scoped lang="less">
-.logo {
-  position: absolute;
-  top: 1.5rem;
-  left: 1.5rem;
-}
-
 nav {
   padding: 2rem;
   width: 100%;
