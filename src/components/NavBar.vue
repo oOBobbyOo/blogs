@@ -17,6 +17,10 @@
           <span class="lt-md:hidden">Blog</span>
           <div i-ri-article-line md:hidden />
         </RouterLink>
+        <RouterLink to="/projects" title="Projects">
+          <span class="lt-md:hidden">Projects</span>
+          <div i-ri-lightbulb-line class="md:hidden" />
+        </RouterLink>
         <a
           href="https://github.com/oOBobbyOo"
           target="_blank"
