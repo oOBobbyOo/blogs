@@ -2,4 +2,4 @@
 title: Blog - Henry Bobby
 ---
 
-# Blog
+<PostsList only-date type="blog" />
