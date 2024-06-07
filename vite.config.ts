@@ -21,7 +21,7 @@ export default defineConfig({
     VueRouter({
       extensions: ['.vue', '.md'],
       dts: 'src/typed-router.d.ts',
-      logs: true,
+      logs: false,
       extendRoute(route) {
         const path = route.components.get('default')
         if (!path)
@@ -53,14 +53,6 @@ export default defineConfig({
       wrapperClasses: 'prose prose-sm m-auto text-left',
       headEnabled: true,
       async markdownItSetup(md) {
-        md.use(LinkAttributes, {
-          matcher: (link: string) => /^https?:\/\//.test(link),
-          attrs: {
-            target: '_blank',
-            rel: 'noopener',
-          },
-        })
-
         md.use(
           await MarkdownItShiki({
             defaultColor: false,
@@ -68,8 +60,17 @@ export default defineConfig({
               light: 'vitesse-light',
               dark: 'vitesse-dark',
             },
+            cssVariablePrefix: '--s-',
           }),
         )
+
+        md.use(LinkAttributes, {
+          matcher: (link: string) => /^https?:\/\//.test(link),
+          attrs: {
+            target: '_blank',
+            rel: 'noopener',
+          },
+        })
       },
     }),
   ],
