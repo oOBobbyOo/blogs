@@ -14,12 +14,17 @@ const router = createRouter({
   },
 })
 
-const app = createApp(App)
 
-const head = createHead()
+async function bootstrap() {
+  const app = createApp(App)
 
-app.use(head)
+  const head = createHead()
 
-app.use(router)
+  app.use(head)
 
-app.mount('#app')
+  app.use(router)
+
+  app.mount('#app')
+}
+
+bootstrap()
