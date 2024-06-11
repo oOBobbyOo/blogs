@@ -4,8 +4,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "dev": "vite",
-    "build": "vue-tsc && vite build",
+    "dev": "vite --port 3333 --open",
+    "build": "vite-ssg build",
     "preview": "vite preview",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"
@@ -14,17 +14,21 @@
     "@unhead/vue": "^1.9.11",
     "@vueuse/core": "^10.10.0",
     "dayjs": "^1.11.11",
+    "nprogress": "^0.2.0",
     "vue": "^3.4.21",
-    "vue-router": "^4.3.2"
+    "vue-router": "^4.3.2",
+    "vue-router-better-scroller": "^0.0.0"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^2.19.0",
+    "@iconify-json/carbon": "^1.1.35",
     "@iconify-json/ri": "^1.1.20",
     "@iconify-json/uil": "^1.1.8",
     "@shikijs/markdown-it": "^1.6.0",
     "@types/fs-extra": "^11.0.4",
     "@types/markdown-it-link-attributes": "^3.0.5",
     "@types/node": "^20.12.12",
+    "@types/nprogress": "^0.2.3",
     "@unocss/eslint-plugin": "^0.60.3",
     "@unocss/reset": "^0.60.3",
     "@vitejs/plugin-vue": "^5.0.4",
@@ -41,6 +45,7 @@
     "unplugin-vue-markdown": "^0.26.2",
     "unplugin-vue-router": "^0.8.8",
     "vite": "^5.2.0",
+    "vite-ssg": "^0.23.7",
     "vue-tsc": "^2.0.6"
   }
 }

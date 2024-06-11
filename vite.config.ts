@@ -20,6 +20,7 @@ export default defineConfig({
     UnoCSS(),
     VueRouter({
       extensions: ['.vue', '.md'],
+      routesFolder: 'src/pages',
       dts: 'src/typed-router.d.ts',
       logs: false,
       extendRoute(route) {
