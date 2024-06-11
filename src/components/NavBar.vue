@@ -4,7 +4,7 @@
 <template>
   <header class="header z-9">
     <RouterLink
-      class="absolute left-2 top-2 m-5 w-16 select-none outline-none xl:fixed"
+      class="absolute left-2 top-2 m-5 w-16 h-7 select-none outline-none xl:fixed"
       to="/"
       focusable="false"
     >
