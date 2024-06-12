@@ -11,7 +11,7 @@ const { y: scroll } = useWindowScroll()
 
 <template>
   <header class="header z-9">
-    <RouterLink class="absolute m-8 w-25 h-25 select-none outline-none xl:fixed" to="/" focusable="false">
+    <RouterLink class="absolute m-5 w-15 h-15 select-none outline-none xl:fixed" to="/" focusable="false">
       <Logo />
     </RouterLink>
     <button title="Scroll to top" fixed right-3 bottom-3 w-10 h-10 hover:op100 rounded-full hover-bg-hex-8883 transition
