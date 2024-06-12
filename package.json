@@ -8,7 +8,8 @@
     "build": "vite-ssg build",
     "preview": "vite preview",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "lint:fix": "eslint . --fix",
+    "prepare": "simple-git-hooks"
   },
   "dependencies": {
     "@unhead/vue": "^1.9.11",
@@ -37,8 +38,10 @@
     "fs-extra": "^11.2.0",
     "gray-matter": "^4.0.3",
     "less": "^4.2.0",
+    "lint-staged": "^15.2.6",
     "markdown-it-link-attributes": "^4.0.1",
     "shiki": "^1.6.0",
+    "simple-git-hooks": "^2.11.1",
     "typescript": "^5.2.2",
     "unocss": "^0.60.3",
     "unplugin-auto-import": "^0.17.6",
@@ -48,5 +51,11 @@
     "vite": "^5.2.0",
     "vite-ssg": "^0.23.7",
     "vue-tsc": "^2.0.6"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint-staged"
+  },
+  "lint-staged": {
+    "*": "eslint --fix"
   }
 }
