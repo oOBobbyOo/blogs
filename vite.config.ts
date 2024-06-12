@@ -51,8 +51,15 @@ export default defineConfig({
       dts: 'src/components.d.ts',
     }),
     Markdown({
-      wrapperClasses: 'prose prose-sm m-auto text-left',
+      wrapperComponent: 'WrapperPost',
+      wrapperClasses: 'prose m-auto slide-enter-content',
       headEnabled: true,
+      exportFrontmatter: false,
+      exposeFrontmatter: false,
+      exposeExcerpt: false,
+      markdownItOptions: {
+        quotes: '""\'\'',
+      },
       async markdownItSetup(md) {
         md.use(
           await MarkdownItShiki({
