@@ -7,6 +7,8 @@ export {}
 /* prettier-ignore */
 declare module 'vue' {
   export interface GlobalComponents {
+    ArtDots: typeof import('./components/Art/ArtDots.vue')['default']
+    ArtPlum: typeof import('./components/Art/ArtPlum.vue')['default']
     DarkMode: typeof import('./components/DarkMode.vue')['default']
     Footer: typeof import('./components/Footer.vue')['default']
     Logo: typeof import('./components/logo.vue')['default']
