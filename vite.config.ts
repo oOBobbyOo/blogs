@@ -12,6 +12,7 @@ import { unheadVueComposablesImports } from '@unhead/vue'
 import Markdown from 'unplugin-vue-markdown/vite'
 import LinkAttributes from 'markdown-it-link-attributes'
 import MarkdownItShiki from '@shikijs/markdown-it'
+import Inspect from 'vite-plugin-inspect'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -81,6 +82,7 @@ export default defineConfig({
         })
       },
     }),
+    Inspect(),  
   ],
   resolve: {
     alias: {

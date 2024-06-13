@@ -49,6 +49,7 @@
     "unplugin-vue-markdown": "^0.26.2",
     "unplugin-vue-router": "^0.8.8",
     "vite": "^5.2.0",
+    "vite-plugin-inspect": "^0.8.4",
     "vite-ssg": "^0.23.7",
     "vue-tsc": "^2.0.6"
   },
