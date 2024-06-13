@@ -12,6 +12,7 @@ import { unheadVueComposablesImports } from '@unhead/vue'
 import Markdown from 'unplugin-vue-markdown/vite'
 import LinkAttributes from 'markdown-it-link-attributes'
 import MarkdownItShiki from '@shikijs/markdown-it'
+import { rendererRich, transformerTwoslash } from '@shikijs/twoslash'
 import Inspect from 'vite-plugin-inspect'
 
 // https://vitejs.dev/config/
@@ -19,6 +20,7 @@ export default defineConfig({
   base: '/blogs/',
   plugins: [
     UnoCSS(),
+
     VueRouter({
       extensions: ['.vue', '.md'],
       routesFolder: 'src/pages',
@@ -37,20 +39,24 @@ export default defineConfig({
         }
       },
     }),
+
     vue({
       include: [/\.vue$/, /\.md$/],
     }),
+
     AutoImport({
       imports: ['vue', '@vueuse/core', VueRouterAutoImports, unheadVueComposablesImports],
       dirs: ['src/composables'],
       dts: 'src/auto-imports.d.ts',
       vueTemplate: true,
     }),
+
     Components({
       extensions: ['vue', 'md'],
       include: [/\.vue$/, /\.vue\?vue/, /\.md$/],
       dts: 'src/components.d.ts',
     }),
+
     Markdown({
       wrapperComponent: 'WrapperPost',
       wrapperClasses: 'prose m-auto slide-enter-content',
@@ -70,6 +76,12 @@ export default defineConfig({
               dark: 'vitesse-dark',
             },
             cssVariablePrefix: '--s-',
+            transformers: [
+              transformerTwoslash({
+                explicitTrigger: true,
+                renderer: rendererRich(),
+              }),
+            ],
           }),
         )
 
@@ -82,6 +94,7 @@ export default defineConfig({
         })
       },
     }),
+
     Inspect(),  
   ],
   resolve: {
