@@ -3,8 +3,8 @@ import {
   presetAttributify,
   presetIcons,
   presetTypography,
-  presetWebFonts,
   presetUno,
+  presetWebFonts,
   transformerDirectives,
   transformerVariantGroup,
 } from 'unocss'

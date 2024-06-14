@@ -12,7 +12,7 @@ export const createApp = ViteSSG(
   App,
   {
     routes,
-    base: import.meta.env.BASE_URL
+    base: import.meta.env.BASE_URL,
   },
   ({ router, isClient }) => {
     if (isClient) {
@@ -39,5 +39,5 @@ export const createApp = ViteSSG(
         NProgress.done()
       })
     }
-  }
+  },
 )

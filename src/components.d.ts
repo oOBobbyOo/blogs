@@ -8,6 +8,7 @@ export {}
 declare module 'vue' {
   export interface GlobalComponents {
     ArtDots: typeof import('./components/Art/ArtDots.vue')['default']
+    ArtParticles: typeof import('./components/Art/ArtParticles.vue')['default']
     ArtPlum: typeof import('./components/Art/ArtPlum.vue')['default']
     DarkMode: typeof import('./components/DarkMode.vue')['default']
     Footer: typeof import('./components/Footer.vue')['default']

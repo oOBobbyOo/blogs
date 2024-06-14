@@ -3,6 +3,7 @@ title: Git Commands
 date: 2023-06-25T05:00:00.000+00:00
 lang: zh
 duration: 15min
+art: particles
 ---
 
 ## git config
@@ -346,7 +347,7 @@ git log --pretty=format:"%h - %an, %ar : %s"
 # 查看提交历史，并显示每次提交的简略的统计信息
 git log --pretty=format:"%h - %s" --abbrev-commit
 ```
-  
+
 ## git reflog
 
 ```bash

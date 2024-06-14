@@ -138,8 +138,10 @@ const mask = computed(() => 'radial-gradient(circle, transparent, black);')
 </script>
 
 <template>
-  <div class="fixed top-0 bottom-0 left-0 right-0 pointer-events-none print:hidden" style="z-index: -1"
-    :style="`mask-image: ${mask};--webkit-mask-image: ${mask};`">
+  <div
+    class="pointer-events-none fixed bottom-0 left-0 right-0 top-0 print:hidden" style="z-index: -1"
+    :style="`mask-image: ${mask};--webkit-mask-image: ${mask};`"
+  >
     <canvas ref="el" width="400" height="400" />
   </div>
 </template>
