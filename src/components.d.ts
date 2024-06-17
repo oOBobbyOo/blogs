@@ -7,6 +7,7 @@ export {}
 /* prettier-ignore */
 declare module 'vue' {
   export interface GlobalComponents {
+    ArtBubbles: typeof import('./components/Art/ArtBubbles.vue')['default']
     ArtDots: typeof import('./components/Art/ArtDots.vue')['default']
     ArtParticles: typeof import('./components/Art/ArtParticles.vue')['default']
     ArtPlum: typeof import('./components/Art/ArtPlum.vue')['default']

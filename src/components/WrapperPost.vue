@@ -11,7 +11,7 @@ const content = ref<HTMLDivElement>()
 
 const ArtComponent = computed(() => {
   let art = frontmatter.art
-  const arts = ['plum', 'dots', 'particles']
+  const arts = ['plum', 'dots', 'particles', 'bubbles']
   if (art === 'random')
     art = arts[Math.floor(Math.random() * arts.length)]
   if (typeof window !== 'undefined') {
@@ -21,6 +21,8 @@ const ArtComponent = computed(() => {
       return defineAsyncComponent(() => import('./Art/ArtDots.vue'))
     else if (art === 'particles')
       return defineAsyncComponent(() => import('./Art/ArtParticles.vue'))
+    else if (art === 'bubbles')
+      return defineAsyncComponent(() => import('./Art/ArtBubbles.vue'))
   }
   return undefined
 })
