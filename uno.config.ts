@@ -45,4 +45,5 @@ export default defineConfig({
     }),
   ],
   transformers: [transformerDirectives(), transformerVariantGroup()],
+  safelist: ['i-logos-vue', 'i-logos-pinia', 'i-logos-vueuse', 'i-logos-react', 'i-logos-react-router']
 })

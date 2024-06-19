@@ -23,3 +23,10 @@ export interface Post {
   inperson?: boolean
   redirect?: string
 }
+
+export interface Nav {
+  name: string
+  link: string
+  desc: string
+  icon?: string
+}

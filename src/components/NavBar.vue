@@ -14,10 +14,10 @@ const { y: scroll } = useWindowScroll()
     <RouterLink class="absolute m-5 h-15 w-15 select-none outline-none xl:fixed" to="/" focusable="false">
       <Logo />
     </RouterLink>
-    <button
-      title="Scroll to top"
-      fixed bottom-3 right-3 z-100 h-10 w-10 rounded-full transition duration-300 print:hidden hover-bg-hex-8883 hover:op100 :class="scroll > 300 ? 'op30' : 'op0! pointer-events-none'" @click="toTop()"
-    >
+    <button 
+      title="Scroll to top" fixed bottom-3 right-3 z-100 h-10 w-10 rounded-full transition duration-300
+      print:hidden hover-bg-hex-8883 hover:op100 :class="scroll > 300 ? 'op30' : 'op0! pointer-events-none'"
+      @click="toTop()">
       <div i-ri-arrow-up-line />
     </button>
     <nav class="nav">
@@ -30,6 +30,9 @@ const { y: scroll } = useWindowScroll()
         <RouterLink to="/projects" title="Projects">
           <span class="lt-md:hidden">Projects</span>
           <div i-ri-lightbulb-line class="md:hidden" />
+        </RouterLink>
+        <RouterLink to="/navigator" title="Navigator">
+          <div i-iconoir-navigator-alt />
         </RouterLink>
         <a href="https://github.com/oOBobbyOo" target="_blank" title="GitHub" class="lt-md:hidden">
           <div i-uil-github-alt />
