@@ -1,5 +1,5 @@
 ---
-title: Navigator - Anthony Fu
+title: Navigator - Henry Bobby
 display: Navigator
 description:  Front-end navigation.
 wrapperClass: 'text-center'

@@ -128,9 +128,43 @@ const react: Nav[] = [
   },
 ]
 
+const css: Nav[] = [
+  {
+    name: 'UnoCSS',
+    link: 'https://unocss.dev/',
+    desc: 'Unocss 是一个基于原子类的即时原子化 CSS 引擎',
+    icon: 'i-logos-unocss',
+  },
+  {
+    name: 'Tailwind CSS',
+    link: 'https://tailwindcss.com/',
+    desc: 'Tailwind CSS 是一个功能类优先的 CSS 框架',
+    icon: 'i-logos-tailwindcss-icon',
+  },
+  {
+    name: 'Windi CSS',
+    link: 'https://windicss.org/',
+    desc: 'Windi CSS 是下一代实用型 CSS 框架。',
+    icon: 'i-logos-windi-css',
+  },
+  {
+    name: 'Panda CSS',
+    link: 'https://panda-css.com/',
+    desc: 'Panda CSS是一个样式引擎，它生成样式基元，以类型安全且可读的方式编写原子 CSS 和配方。',
+    icon: 'i-logos-pandacss-icon',
+  },
+  {
+    name: 'Styled Components',
+    link: 'https://styled-components.com/',
+    desc: 'Styled Components 是一个用于构建可重用、可组合的样式组件的库。',
+    icon: 'https://styled-components.com/favicon.png',
+  },
+]
+
 const navigtor: Navigator = {
   'Vue Ecosystem': vue,
   'React Ecosystem': react,
+  'CSS': css,
 }
 
 export default navigtor
