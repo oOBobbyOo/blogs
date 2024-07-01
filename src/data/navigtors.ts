@@ -161,10 +161,62 @@ const css: Nav[] = [
   },
 ]
 
+const icons: Nav[] = [
+  {
+    name: 'Icones',
+    link: 'https://icones.netlify.app/',
+    desc: '具有即时搜索功能的图标资源管理器',
+    icon: 'icones',
+  },
+  {
+    name: 'Iconify',
+    link: 'https://iconify.design/',
+    desc: 'Iconify 是一个开源的图标库，它支持 SVG、字体和多种框架。',
+    icon: 'https://iconify.design/favicon.svg',
+  },
+  {
+    name: 'IconPark',
+    link: 'https://iconpark.oceanengine.com/official',
+    desc: 'IconPark图标库是一个通过技术驱动矢量图标样式的开源图标库。',
+    icon: 'https://lf1-cdn2-tos.bytegoofy.com/bydesign/iconparksite/logo.svg',
+  },
+  {
+    name: 'Iconfont',
+    link: 'https://www.iconfont.cn/',
+    desc: '阿里巴巴矢量图标库',
+    icon: 'https://www.iconfont.cn/favicon.ico',
+  },
+  {
+    name: 'Animated icons',
+    link: 'https://unicornicons.com/icons',
+    desc: '自带动画的图标库',
+    icon: 'https://unicornicons.com/logo.svg',
+  },
+  {
+    name: 'Lucide',
+    link: 'https://lucide.dev/icons/',
+    desc: '美丽的＆一致的图标',
+    icon: 'https://lucide.dev/logo.light.svg',
+  },
+  {
+    name: 'Remix Icon',
+    link: 'https://remixicon.com/',
+    desc: '简单令人愉快的图标系统',
+    icon: 'https://remixicon.com/favicon.ico',
+  },
+  {
+    name: 'Tabler Icons',
+    link: 'https://tablericons.com/',
+    desc: 'Tabler Icons 是一个开源的图标库，它支持 SVG、字体和多种框架。',
+    icon: 'https://tablericons.com/favicon.ico',
+  },
+]
+
 const navigtor: Navigator = {
   'Vue Ecosystem': vue,
   'React Ecosystem': react,
   'CSS': css,
+  'Icons': icons,
 }
 
 export default navigtor

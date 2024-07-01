@@ -11,7 +11,7 @@ function slug(name: string) {
     <p mb5 mt--6 text-center text-lg italic op50>
       Front-end navigation.
     </p>
-    <div v-for="key, cidx in Object.keys(navigtors)" :key="cidx">
+    <div v-for="key, cidx in Object.keys(navigtors)" :key="cidx" slide-enter :style="{ '--enter-stage': cidx + 1 }">
       <div
         :id="slug(key)" slide-enter pointer-events-none relative h20 select-none :style="{
           '--enter-stage': cidx - 2,
@@ -33,7 +33,8 @@ function slug(name: string) {
         >
           <div flex="~ items-center justify-center">
             <div pr-3>
-              <img v-if="isUrl(item.icon || '')" :src="item.icon" class="max-w-11" :alt="item.name">
+              <Icones v-if="item.icon === 'icones'" class="text-4xl opacity-50" />
+              <img v-else-if="isUrl(item.icon || '')" :src="item.icon" class="min-w-11 w-11" :alt="item.name">
               <div v-else class="text-4xl opacity-50" :class="item.icon || 'i-carbon-unknown'" />
             </div>
             <div class="flex-auto">

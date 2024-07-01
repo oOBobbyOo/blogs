@@ -13,6 +13,7 @@ declare module 'vue' {
     ArtPlum: typeof import('./components/Art/ArtPlum.vue')['default']
     DarkMode: typeof import('./components/DarkMode.vue')['default']
     Footer: typeof import('./components/Footer.vue')['default']
+    Icones: typeof import('./components/Icons/Icones.vue')['default']
     Logo: typeof import('./components/logo.vue')['default']
     NavBar: typeof import('./components/NavBar.vue')['default']
     NavigtorList: typeof import('./components/NavigtorList.vue')['default']
