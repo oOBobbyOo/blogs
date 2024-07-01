@@ -34,6 +34,7 @@ function slug(name: string) {
           <div flex="~ items-center justify-center">
             <div pr-3>
               <Icones v-if="item.icon === 'icones'" class="text-4xl opacity-50" />
+              <VisActor v-if="item.icon === 'visactor'" class="text-4xl opacity-50" />
               <img v-else-if="isUrl(item.icon || '')" :src="item.icon" class="min-w-11 w-11" :alt="item.name">
               <div v-else class="text-4xl opacity-50" :class="item.icon || 'i-carbon-unknown'" />
             </div>

@@ -212,11 +212,40 @@ const icons: Nav[] = [
   },
 ]
 
+const charts: Nav[] = [
+  {
+    name: 'Echarts',
+    link: 'https://echarts.apache.org/zh/index.html',
+    desc: 'ECharts 一个基于 JavaScript 的开源可视化图表库',
+    icon: 'https://echarts.apache.org/zh/images/favicon.png',
+  },
+  {
+    name: 'Antv',
+    link: 'https://antv.vision/zh',
+    desc: 'AntV 是一个数据可视化解决方案，它包含多个产品，例如 AntV G2、AntV G6、AntV L7、AntV X6 等。', 
+    icon: 'https://gw.alipayobjects.com/zos/antfincdn/FLrTNDvlna/antv.png',
+  },
+  {
+    name: 'VisActor',
+    link: 'https://www.visactor.io/vchart',
+    desc: '开箱即用的多端图表库，生动灵活的数据故事讲述者。',
+    icon: 'visactor',
+  },
+  {
+    name: 'D3.js',
+    link: 'https://d3js.org/',
+    desc: 'D3.js 一个基于 web 标准的 JavaScript 可视化库',
+    icon: 'https://d3js.org/logo.svg',
+  }
+
+]
+
 const navigtor: Navigator = {
   'Vue Ecosystem': vue,
   'React Ecosystem': react,
   'CSS': css,
   'Icons': icons,
+  'Charts': charts,
 }
 
 export default navigtor
