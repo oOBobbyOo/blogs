@@ -8,4 +8,4 @@ art: dots
 
 <!-- @layout-full-width -->
 
-<NavigtorList />
+<NavigatorList />

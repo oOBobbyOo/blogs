@@ -222,7 +222,7 @@ const charts: Nav[] = [
   {
     name: 'Antv',
     link: 'https://antv.vision/zh',
-    desc: 'AntV 是一个数据可视化解决方案，它包含多个产品，例如 AntV G2、AntV G6、AntV L7、AntV X6 等。', 
+    desc: 'AntV 是一个数据可视化解决方案，它包含多个产品，例如 AntV G2、AntV G6、AntV L7、AntV X6 等。',
     icon: 'https://gw.alipayobjects.com/zos/antfincdn/FLrTNDvlna/antv.png',
   },
   {
@@ -236,16 +236,43 @@ const charts: Nav[] = [
     link: 'https://d3js.org/',
     desc: 'D3.js 一个基于 web 标准的 JavaScript 可视化库',
     icon: 'https://d3js.org/logo.svg',
-  }
-
+  },
 ]
 
-const navigtor: Navigator = {
+const ai: Nav[] = [
+  {
+    name: 'ChatGPT',
+    link: 'https://chat.openai.com/chat',
+    desc: 'ChatGPT，全称聊天生成预训练转换器，是OpenAI开发的人工智能聊天机器人程序，该程序使用基于GPT-3.5、GPT-4、GPT-4o架构的大型语言模型并以强化学习训练。',
+    icon: 'chatgpt',
+  },
+  {
+    name: '问心一言',
+    link: 'https://yiyan.baidu.com/',
+    desc: '文心一言是由百度公司开发的聊天机器人，能够与人交互、回答问题及协作创作。',
+    icon: 'https://nlp-eb.cdn.bcebos.com/logo/favicon.ico',
+  },
+  {
+    name: '通义千问',
+    link: 'https://tongyi.aliyun.com/qianwen/',
+    desc: '通义千问是由阿里巴巴集团旗下的云端运算服务的科技公司阿里云开发的聊天机器人，能够与人交互、回答问题及协作创作。',
+    icon: 'https://acd-assets.alicdn.com/acd_work/tongyi-portal/assets/logo.svg',
+  },
+  {
+    name: '豆包AI',
+    link: 'https://www.doubao.com/chat/',
+    desc: '豆包是字节跳动公司基于云雀模型开发的AI 工具，提供聊天机器人、写作助手以及英语学习助手等功能。',
+    icon: 'https://lf-flow-web-cdn.doubao.com/obj/flow-doubao/doubao/web/static/image/OnboardingAvatar.bb1504ee.webp',
+  },
+]
+
+const navigator: Navigator = {
   'Vue Ecosystem': vue,
   'React Ecosystem': react,
   'CSS': css,
   'Icons': icons,
   'Charts': charts,
+  'AI': ai,
 }
 
-export default navigtor
+export default navigator
