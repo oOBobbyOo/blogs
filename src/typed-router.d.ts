@@ -23,6 +23,7 @@ declare module 'vue-router/auto-routes' {
     '/navigator': RouteRecordInfo<'/navigator', '/navigator', Record<never, never>, Record<never, never>>,
     '/posts/': RouteRecordInfo<'/posts/', '/posts', Record<never, never>, Record<never, never>>,
     '/posts/git-commands': RouteRecordInfo<'/posts/git-commands', '/posts/git-commands', Record<never, never>, Record<never, never>>,
+    '/posts/web-storage': RouteRecordInfo<'/posts/web-storage', '/posts/web-storage', Record<never, never>, Record<never, never>>,
     '/projects': RouteRecordInfo<'/projects', '/projects', Record<never, never>, Record<never, never>>,
   }
 }
