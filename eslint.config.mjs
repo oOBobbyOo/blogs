@@ -11,4 +11,9 @@ export default antfu(
     jsonc: false,
     yaml: false,
   },
+  {
+    rules: {
+      'vue/no-v-text-v-html-on-component': 'off',
+    },
+  },
 )
