@@ -46,6 +46,7 @@
     "gray-matter": "^4.0.3",
     "less": "^4.2.0",
     "lint-staged": "^15.2.6",
+    "markdown-it-anchor": "^9.0.1",
     "markdown-it-link-attributes": "^4.0.1",
     "shiki": "^1.6.0",
     "simple-git-hooks": "^2.11.1",

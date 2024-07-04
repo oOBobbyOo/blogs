@@ -10,6 +10,7 @@ import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
 import { unheadVueComposablesImports } from '@unhead/vue'
 import Markdown from 'unplugin-vue-markdown/vite'
+import anchor from 'markdown-it-anchor'
 import LinkAttributes from 'markdown-it-link-attributes'
 import MarkdownItShiki from '@shikijs/markdown-it'
 import { rendererRich, transformerTwoslash } from '@shikijs/twoslash'
@@ -86,6 +87,13 @@ export default defineConfig({
             ],
           }),
         )
+
+        md.use(anchor, {
+          permalink: anchor.permalink.linkInsideHeader({
+            symbol: '#',
+            renderAttrs: () => ({ 'aria-hidden': 'true' }),
+          }),
+        })
 
         md.use(LinkAttributes, {
           matcher: (link: string) => /^https?:\/\//.test(link),
