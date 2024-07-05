@@ -196,6 +196,7 @@
   padding-right: 0.5714286em;
   padding-bottom: 0.5714286em;
   padding-left: 0.5714286em;
+  white-space: nowrap;
 }
 .prose tbody tr {
   border-bottom-width: 1px;
