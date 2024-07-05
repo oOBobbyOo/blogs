@@ -36,7 +36,7 @@ art: particles
 - **数据格式：** sessionStorage以键值对的形式存储数据，支持用JSON.stringify存储JavaScript对象。
 - **大小限制：** 与localStorage相似，取决于浏览器。
 - **安全性考量：** 同样遵循同源策略，不参与网络请求。
-- **JavaScript API：**  通过JavaScript的sessionStorage进行操作，支持键值对存储模型。（setItem，getItem用来存储和取出数据）。
+- **JavaScript API：** 通过JavaScript的sessionStorage进行操作，支持键值对存储模型。（setItem，getItem用来存储和取出数据）。
 - **有效期：** 仅在当前浏览器会话期间有效，标签页或窗口关闭即失效。
 
 ## 区别
@@ -47,18 +47,17 @@ art: particles
 2. localStorage的有效期是在不进行手动删除的情况下是一直有效的。
 3. sessionStorage的有效期是仅保持在当前页面，关闭当前会话页或者浏览器后就会失效。
 
-####  二、存储的大小不同
+#### 二、存储的大小不同
 
 1. cookie的存储是4KB左右，存储量较小，并且每个域名下的cookie总数也有限制。
 2. localStorage和sessionStorage的存储容量通常限制在5MB左右，可以存储更大量的数据。
 
-####  三、与服务端的通信
+#### 三、与服务端的通信
 
 1. cookie会参与到与服务端的通信中，一般会携带在http请求的头部中，例如一些关键密匙验证等。
 2. localStorage和sessionStorage是单纯的前端存储，不参与与服务端的通信。
 
-####  四、作用域不同
+#### 四、作用域不同
 
 1. sessionStorage不在不同浏览器中共享，即使是同一个页面。
 2. localStorage和cookie是在所有同源的窗口中都是共享的。
-
