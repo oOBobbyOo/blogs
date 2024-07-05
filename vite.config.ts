@@ -15,6 +15,7 @@ import LinkAttributes from 'markdown-it-link-attributes'
 import MarkdownItShiki from '@shikijs/markdown-it'
 import { rendererRich, transformerTwoslash } from '@shikijs/twoslash'
 import Inspect from 'vite-plugin-inspect'
+import { slugify } from './scripts/slugify'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -89,6 +90,7 @@ export default defineConfig({
         )
 
         md.use(anchor, {
+          slugify,
           permalink: anchor.permalink.linkInsideHeader({
             symbol: '#',
             renderAttrs: () => ({ 'aria-hidden': 'true' }),
