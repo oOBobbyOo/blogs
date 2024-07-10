@@ -25,6 +25,7 @@ declare module 'vue-router/auto-routes' {
     '/posts/browser-cache': RouteRecordInfo<'/posts/browser-cache', '/posts/browser-cache', Record<never, never>, Record<never, never>>,
     '/posts/git-commands': RouteRecordInfo<'/posts/git-commands', '/posts/git-commands', Record<never, never>, Record<never, never>>,
     '/posts/set-map': RouteRecordInfo<'/posts/set-map', '/posts/set-map', Record<never, never>, Record<never, never>>,
+    '/posts/vue-react-perf': RouteRecordInfo<'/posts/vue-react-perf', '/posts/vue-react-perf', Record<never, never>, Record<never, never>>,
     '/posts/web-storage': RouteRecordInfo<'/posts/web-storage', '/posts/web-storage', Record<never, never>, Record<never, never>>,
     '/projects': RouteRecordInfo<'/projects', '/projects', Record<never, never>, Record<never, never>>,
   }
