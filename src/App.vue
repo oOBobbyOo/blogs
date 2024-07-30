@@ -8,4 +8,5 @@ const route = useRoute()
     <RouterView />
     <Footer :key="route.path" />
   </main>
+  <CustomPointer />
 </template>

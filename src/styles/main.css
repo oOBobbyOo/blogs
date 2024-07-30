@@ -20,6 +20,10 @@ html.dark {
   --c-scrollbar-hover: #222;
 }
 
+body {
+  cursor: none !important;
+}
+
 ::-webkit-scrollbar {
   width: 6px;
 }

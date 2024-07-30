@@ -12,6 +12,7 @@ declare module 'vue' {
     ArtParticles: typeof import('./components/Art/ArtParticles.vue')['default']
     ArtPlum: typeof import('./components/Art/ArtPlum.vue')['default']
     ChatGPT: typeof import('./components/Icons/ChatGPT.vue')['default']
+    CustomPointer: typeof import('./components/CustomPointer.vue')['default']
     DarkMode: typeof import('./components/DarkMode.vue')['default']
     Footer: typeof import('./components/Footer.vue')['default']
     Icones: typeof import('./components/Icons/Icones.vue')['default']
