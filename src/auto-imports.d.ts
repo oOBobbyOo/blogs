@@ -38,11 +38,11 @@ declare global {
   const engine: typeof import('./composables/ua')['engine']
   const englishOnly: typeof import('./composables/index')['englishOnly']
   const extendRef: typeof import('@vueuse/core')['extendRef']
-  const formatDate: typeof import('./composables/index')['formatDate']
+  const formatDate: typeof import('./composables/day')['formatDate']
   const getActiveHead: typeof import('@unhead/vue')['getActiveHead']
   const getCurrentInstance: typeof import('vue')['getCurrentInstance']
   const getCurrentScope: typeof import('vue')['getCurrentScope']
-  const getYear: typeof import('./composables/index')['getYear']
+  const getYear: typeof import('./composables/day')['getYear']
   const h: typeof import('vue')['h']
   const ignorableWatch: typeof import('@vueuse/core')['ignorableWatch']
   const inject: typeof import('vue')['inject']
@@ -50,13 +50,13 @@ declare global {
   const injectLocal: typeof import('@vueuse/core')['injectLocal']
   const isDark: typeof import('./composables/dark')['isDark']
   const isDefined: typeof import('@vueuse/core')['isDefined']
-  const isFuture: typeof import('./composables/index')['isFuture']
+  const isFuture: typeof import('./composables/day')['isFuture']
   const isMobile: typeof import('./composables/ua')['isMobile']
   const isProxy: typeof import('vue')['isProxy']
   const isReactive: typeof import('vue')['isReactive']
   const isReadonly: typeof import('vue')['isReadonly']
   const isRef: typeof import('vue')['isRef']
-  const isSameYear: typeof import('./composables/index')['isSameYear']
+  const isSameYear: typeof import('./composables/day')['isSameYear']
   const isUrl: typeof import('./composables/is')['isUrl']
   const makeDestructurable: typeof import('@vueuse/core')['makeDestructurable']
   const markRaw: typeof import('vue')['markRaw']
@@ -355,11 +355,11 @@ declare module 'vue' {
     readonly effectScope: UnwrapRef<typeof import('vue')['effectScope']>
     readonly englishOnly: UnwrapRef<typeof import('./composables/index')['englishOnly']>
     readonly extendRef: UnwrapRef<typeof import('@vueuse/core')['extendRef']>
-    readonly formatDate: UnwrapRef<typeof import('./composables/index')['formatDate']>
+    readonly formatDate: UnwrapRef<typeof import('./composables/day')['formatDate']>
     readonly getActiveHead: UnwrapRef<typeof import('@unhead/vue')['getActiveHead']>
     readonly getCurrentInstance: UnwrapRef<typeof import('vue')['getCurrentInstance']>
     readonly getCurrentScope: UnwrapRef<typeof import('vue')['getCurrentScope']>
-    readonly getYear: UnwrapRef<typeof import('./composables/index')['getYear']>
+    readonly getYear: UnwrapRef<typeof import('./composables/day')['getYear']>
     readonly h: UnwrapRef<typeof import('vue')['h']>
     readonly ignorableWatch: UnwrapRef<typeof import('@vueuse/core')['ignorableWatch']>
     readonly inject: UnwrapRef<typeof import('vue')['inject']>
@@ -367,13 +367,13 @@ declare module 'vue' {
     readonly injectLocal: UnwrapRef<typeof import('@vueuse/core')['injectLocal']>
     readonly isDark: UnwrapRef<typeof import('./composables/dark')['isDark']>
     readonly isDefined: UnwrapRef<typeof import('@vueuse/core')['isDefined']>
-    readonly isFuture: UnwrapRef<typeof import('./composables/index')['isFuture']>
+    readonly isFuture: UnwrapRef<typeof import('./composables/day')['isFuture']>
     readonly isMobile: UnwrapRef<typeof import('./composables/ua')['isMobile']>
     readonly isProxy: UnwrapRef<typeof import('vue')['isProxy']>
     readonly isReactive: UnwrapRef<typeof import('vue')['isReactive']>
     readonly isReadonly: UnwrapRef<typeof import('vue')['isReadonly']>
     readonly isRef: UnwrapRef<typeof import('vue')['isRef']>
-    readonly isSameYear: UnwrapRef<typeof import('./composables/index')['isSameYear']>
+    readonly isSameYear: UnwrapRef<typeof import('./composables/day')['isSameYear']>
     readonly isUrl: UnwrapRef<typeof import('./composables/is')['isUrl']>
     readonly makeDestructurable: UnwrapRef<typeof import('@vueuse/core')['makeDestructurable']>
     readonly markRaw: UnwrapRef<typeof import('vue')['markRaw']>
@@ -662,11 +662,11 @@ declare module '@vue/runtime-core' {
     readonly effectScope: UnwrapRef<typeof import('vue')['effectScope']>
     readonly englishOnly: UnwrapRef<typeof import('./composables/index')['englishOnly']>
     readonly extendRef: UnwrapRef<typeof import('@vueuse/core')['extendRef']>
-    readonly formatDate: UnwrapRef<typeof import('./composables/index')['formatDate']>
+    readonly formatDate: UnwrapRef<typeof import('./composables/day')['formatDate']>
     readonly getActiveHead: UnwrapRef<typeof import('@unhead/vue')['getActiveHead']>
     readonly getCurrentInstance: UnwrapRef<typeof import('vue')['getCurrentInstance']>
     readonly getCurrentScope: UnwrapRef<typeof import('vue')['getCurrentScope']>
-    readonly getYear: UnwrapRef<typeof import('./composables/index')['getYear']>
+    readonly getYear: UnwrapRef<typeof import('./composables/day')['getYear']>
     readonly h: UnwrapRef<typeof import('vue')['h']>
     readonly ignorableWatch: UnwrapRef<typeof import('@vueuse/core')['ignorableWatch']>
     readonly inject: UnwrapRef<typeof import('vue')['inject']>
@@ -674,13 +674,13 @@ declare module '@vue/runtime-core' {
     readonly injectLocal: UnwrapRef<typeof import('@vueuse/core')['injectLocal']>
     readonly isDark: UnwrapRef<typeof import('./composables/dark')['isDark']>
     readonly isDefined: UnwrapRef<typeof import('@vueuse/core')['isDefined']>
-    readonly isFuture: UnwrapRef<typeof import('./composables/index')['isFuture']>
+    readonly isFuture: UnwrapRef<typeof import('./composables/day')['isFuture']>
     readonly isMobile: UnwrapRef<typeof import('./composables/ua')['isMobile']>
     readonly isProxy: UnwrapRef<typeof import('vue')['isProxy']>
     readonly isReactive: UnwrapRef<typeof import('vue')['isReactive']>
     readonly isReadonly: UnwrapRef<typeof import('vue')['isReadonly']>
     readonly isRef: UnwrapRef<typeof import('vue')['isRef']>
-    readonly isSameYear: UnwrapRef<typeof import('./composables/index')['isSameYear']>
+    readonly isSameYear: UnwrapRef<typeof import('./composables/day')['isSameYear']>
     readonly isUrl: UnwrapRef<typeof import('./composables/is')['isUrl']>
     readonly makeDestructurable: UnwrapRef<typeof import('@vueuse/core')['makeDestructurable']>
     readonly markRaw: UnwrapRef<typeof import('vue')['markRaw']>
