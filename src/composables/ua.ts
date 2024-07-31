@@ -1,6 +1,6 @@
 import { UAParser } from 'ua-parser-js'
 
-const ua = window.navigator.userAgent
+const ua = isWindow ? navigator.userAgent : undefined
 const parser = new UAParser(ua)
 
 export const uaBrowser = parser.getBrowser()
