@@ -8,6 +8,7 @@ declare global {
   const EffectScope: typeof import('vue')['EffectScope']
   const asyncComputed: typeof import('@vueuse/core')['asyncComputed']
   const autoResetRef: typeof import('@vueuse/core')['autoResetRef']
+  const browser: typeof import('./composables/ua')['browser']
   const computed: typeof import('vue')['computed']
   const computedAsync: typeof import('@vueuse/core')['computedAsync']
   const computedEager: typeof import('@vueuse/core')['computedEager']
@@ -15,6 +16,7 @@ declare global {
   const computedWithControl: typeof import('@vueuse/core')['computedWithControl']
   const controlledComputed: typeof import('@vueuse/core')['controlledComputed']
   const controlledRef: typeof import('@vueuse/core')['controlledRef']
+  const cpu: typeof import('./composables/ua')['cpu']
   const createApp: typeof import('vue')['createApp']
   const createEventHook: typeof import('@vueuse/core')['createEventHook']
   const createGlobalState: typeof import('@vueuse/core')['createGlobalState']
@@ -30,8 +32,10 @@ declare global {
   const defineAsyncComponent: typeof import('vue')['defineAsyncComponent']
   const defineComponent: typeof import('vue')['defineComponent']
   const definePage: typeof import('unplugin-vue-router/runtime')['definePage']
+  const device: typeof import('./composables/ua')['device']
   const eagerComputed: typeof import('@vueuse/core')['eagerComputed']
   const effectScope: typeof import('vue')['effectScope']
+  const engine: typeof import('./composables/ua')['engine']
   const englishOnly: typeof import('./composables/index')['englishOnly']
   const extendRef: typeof import('@vueuse/core')['extendRef']
   const formatDate: typeof import('./composables/index')['formatDate']
@@ -47,6 +51,7 @@ declare global {
   const isDark: typeof import('./composables/dark')['isDark']
   const isDefined: typeof import('@vueuse/core')['isDefined']
   const isFuture: typeof import('./composables/index')['isFuture']
+  const isMobile: typeof import('./composables/ua')['isMobile']
   const isProxy: typeof import('vue')['isProxy']
   const isReactive: typeof import('vue')['isReactive']
   const isReadonly: typeof import('vue')['isReadonly']
@@ -75,6 +80,7 @@ declare global {
   const onStartTyping: typeof import('@vueuse/core')['onStartTyping']
   const onUnmounted: typeof import('vue')['onUnmounted']
   const onUpdated: typeof import('vue')['onUpdated']
+  const os: typeof import('./composables/ua')['os']
   const pausableWatch: typeof import('@vueuse/core')['pausableWatch']
   const preferredDark: typeof import('./composables/dark')['preferredDark']
   const provide: typeof import('vue')['provide']
@@ -95,6 +101,7 @@ declare global {
   const resolveComponent: typeof import('vue')['resolveComponent']
   const resolveRef: typeof import('@vueuse/core')['resolveRef']
   const resolveUnref: typeof import('@vueuse/core')['resolveUnref']
+  const result: typeof import('./composables/ua')['result']
   const shallowReactive: typeof import('vue')['shallowReactive']
   const shallowReadonly: typeof import('vue')['shallowReadonly']
   const shallowRef: typeof import('vue')['shallowRef']
@@ -115,6 +122,12 @@ declare global {
   const tryOnMounted: typeof import('@vueuse/core')['tryOnMounted']
   const tryOnScopeDispose: typeof import('@vueuse/core')['tryOnScopeDispose']
   const tryOnUnmounted: typeof import('@vueuse/core')['tryOnUnmounted']
+  const uaBrowser: typeof import('./composables/ua')['uaBrowser']
+  const uaCPU: typeof import('./composables/ua')['uaCPU']
+  const uaDevice: typeof import('./composables/ua')['uaDevice']
+  const uaEngine: typeof import('./composables/ua')['uaEngine']
+  const uaOS: typeof import('./composables/ua')['uaOS']
+  const uaResult: typeof import('./composables/ua')['uaResult']
   const unref: typeof import('vue')['unref']
   const unrefElement: typeof import('@vueuse/core')['unrefElement']
   const until: typeof import('@vueuse/core')['until']
@@ -355,6 +368,7 @@ declare module 'vue' {
     readonly isDark: UnwrapRef<typeof import('./composables/dark')['isDark']>
     readonly isDefined: UnwrapRef<typeof import('@vueuse/core')['isDefined']>
     readonly isFuture: UnwrapRef<typeof import('./composables/index')['isFuture']>
+    readonly isMobile: UnwrapRef<typeof import('./composables/ua')['isMobile']>
     readonly isProxy: UnwrapRef<typeof import('vue')['isProxy']>
     readonly isReactive: UnwrapRef<typeof import('vue')['isReactive']>
     readonly isReadonly: UnwrapRef<typeof import('vue')['isReadonly']>
@@ -423,6 +437,12 @@ declare module 'vue' {
     readonly tryOnMounted: UnwrapRef<typeof import('@vueuse/core')['tryOnMounted']>
     readonly tryOnScopeDispose: UnwrapRef<typeof import('@vueuse/core')['tryOnScopeDispose']>
     readonly tryOnUnmounted: UnwrapRef<typeof import('@vueuse/core')['tryOnUnmounted']>
+    readonly uaBrowser: UnwrapRef<typeof import('./composables/ua')['uaBrowser']>
+    readonly uaCPU: UnwrapRef<typeof import('./composables/ua')['uaCPU']>
+    readonly uaDevice: UnwrapRef<typeof import('./composables/ua')['uaDevice']>
+    readonly uaEngine: UnwrapRef<typeof import('./composables/ua')['uaEngine']>
+    readonly uaOS: UnwrapRef<typeof import('./composables/ua')['uaOS']>
+    readonly uaResult: UnwrapRef<typeof import('./composables/ua')['uaResult']>
     readonly unref: UnwrapRef<typeof import('vue')['unref']>
     readonly unrefElement: UnwrapRef<typeof import('@vueuse/core')['unrefElement']>
     readonly until: UnwrapRef<typeof import('@vueuse/core')['until']>
@@ -655,6 +675,7 @@ declare module '@vue/runtime-core' {
     readonly isDark: UnwrapRef<typeof import('./composables/dark')['isDark']>
     readonly isDefined: UnwrapRef<typeof import('@vueuse/core')['isDefined']>
     readonly isFuture: UnwrapRef<typeof import('./composables/index')['isFuture']>
+    readonly isMobile: UnwrapRef<typeof import('./composables/ua')['isMobile']>
     readonly isProxy: UnwrapRef<typeof import('vue')['isProxy']>
     readonly isReactive: UnwrapRef<typeof import('vue')['isReactive']>
     readonly isReadonly: UnwrapRef<typeof import('vue')['isReadonly']>
@@ -723,6 +744,12 @@ declare module '@vue/runtime-core' {
     readonly tryOnMounted: UnwrapRef<typeof import('@vueuse/core')['tryOnMounted']>
     readonly tryOnScopeDispose: UnwrapRef<typeof import('@vueuse/core')['tryOnScopeDispose']>
     readonly tryOnUnmounted: UnwrapRef<typeof import('@vueuse/core')['tryOnUnmounted']>
+    readonly uaBrowser: UnwrapRef<typeof import('./composables/ua')['uaBrowser']>
+    readonly uaCPU: UnwrapRef<typeof import('./composables/ua')['uaCPU']>
+    readonly uaDevice: UnwrapRef<typeof import('./composables/ua')['uaDevice']>
+    readonly uaEngine: UnwrapRef<typeof import('./composables/ua')['uaEngine']>
+    readonly uaOS: UnwrapRef<typeof import('./composables/ua')['uaOS']>
+    readonly uaResult: UnwrapRef<typeof import('./composables/ua')['uaResult']>
     readonly unref: UnwrapRef<typeof import('vue')['unref']>
     readonly unrefElement: UnwrapRef<typeof import('@vueuse/core')['unrefElement']>
     readonly until: UnwrapRef<typeof import('@vueuse/core')['until']>

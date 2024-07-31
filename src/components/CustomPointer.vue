@@ -2,13 +2,13 @@
 const { x, y } = useMouse({ type: 'client' })
 
 const pointStyles = computed<Record<string, string | number>>(() => ({
-  transform: `translate(calc(${x.value}px - 50%), calc(${y.value}px - 50%))`,
+  transform: `translate3d(calc(${x.value}px - 50%), calc(${y.value}px - 50%), 0)`,
 }))
 </script>
 
 <template>
-  <div class="cursor" :style="pointStyles" />
-  <div class="pointer" :style="pointStyles" />
+  <div v-if="!isMobile" class="cursor" :style="pointStyles" />
+  <div v-if="!isMobile" class="pointer" :style="pointStyles" />
 </template>
 
 <style scoped lang="less">
@@ -22,7 +22,7 @@ const pointStyles = computed<Record<string, string | number>>(() => ({
   border-radius: 50%;
   background: rgba(0, 0, 0, 0.2);
   pointer-events: none;
-  transition: 0.2s ease-out;
+  transition: 0.1s ease-out;
 }
 
 .pointer {
@@ -36,8 +36,8 @@ const pointStyles = computed<Record<string, string | number>>(() => ({
   background-color: rgba(0, 0, 0, 0.5);
   pointer-events: none;
   transition:
-    background 0.1s,
-    width 0.1s,
-    height 0.1s;
+    background 0.05s,
+    width 0.05s,
+    height 0.05s;
 }
 </style>
