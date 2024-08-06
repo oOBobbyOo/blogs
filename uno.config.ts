@@ -45,5 +45,5 @@ export default defineConfig({
     }),
   ],
   transformers: [transformerDirectives(), transformerVariantGroup()],
-  safelist: ['i-logos-vue', 'i-logos-pinia', 'i-logos-vueuse', 'i-logos-nuxt-icon', 'i-logos-react', 'i-logos-react-router', 'i-logos-nextjs-icon', 'i-simple-icons-remix', 'i-logos-react-query-icon', 'i-simple-icons-recoil', 'i-logos-mobx', 'i-logos-redux', 'i-logos-react-spring', 'i-logos-unocss', 'i-logos-tailwindcss-icon', 'i-logos-windi-css', 'i-logos-pandacss-icon'],
+  safelist: ['i-logos-vue', 'i-logos-vitejs', 'i-logos-vitest', 'i-logos-pinia', 'i-logos-vueuse', 'i-logos-nuxt-icon', 'i-logos-react', 'i-logos-react-router', 'i-logos-nextjs-icon', 'i-simple-icons-remix', 'i-logos-react-query-icon', 'i-simple-icons-recoil', 'i-logos-mobx', 'i-logos-redux', 'i-logos-react-spring', 'i-logos-unocss', 'i-logos-tailwindcss-icon', 'i-logos-windi-css', 'i-logos-pandacss-icon'],
 })

@@ -16,6 +16,18 @@ const vue: Nav[] = [
     icon: 'i-logos-vue',
   },
   {
+    name: 'Vite',
+    link: 'https://cn.vitejs.dev/',
+    desc: '下一代的前端工具链',
+    icon: 'i-logos-vitejs',
+  },
+  {
+    name: 'Vitest',
+    link: 'https://cn.vitest.dev/',
+    desc: '下一代测试框架，一个原生支持 Vite 的测试框架',
+    icon: 'i-logos-vitest',
+  },
+  {
     name: 'Pinia',
     link: 'https://pinia.vuejs.org/zh/',
     desc: '符合直觉的 Vue.js 状态管理库',
@@ -32,6 +44,12 @@ const vue: Nav[] = [
     link: 'https://vueuse.org/',
     desc: 'Vue Composition API 的实用程序',
     icon: 'i-logos-vueuse',
+  },
+  {
+    name: 'Rolldown',
+    link: 'https://rolldown.rs/',
+    desc: '基于 Rust 的 JavaScript 快速打包器',
+    icon: 'https://rolldown.rs/rolldown-round.svg',
   },
 ]
 
@@ -82,7 +100,7 @@ const react: Nav[] = [
     name: 'Zustand',
     link: 'https://zustand-demo.pmnd.rs/',
     desc: 'Zustand 是一个用于构建快速、可扩展的状态管理的 React Hook',
-    icon: 'https://docs.pmnd.rs/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fzustand-icon.8507f6a0.png&w=750&q=75',
+    icon: 'https://docs.pmnd.rs/_next/static/media/zustand-icon.8507f6a0.png',
   },
   {
     name: 'Jotai',
