@@ -114,6 +114,11 @@ console.log(anotherPerson.name) // 'person'
 
 anotherPerson.friends.push('David')
 console.log(person.friends) // ['Alice', 'Bob', 'Charlie', 'David']
+
+// ECMAScript5 通过新增 Object.create()方法规范化了原型式继承。
+// 这个方法接收两个参数: 一个用作新对象原型的对象和(可选的)一个为新对象定义额外属性的对象。
+// 在传入一个参数的情况下，Object.create()与createObj方法的行为相同。
+const anotherPerson = Object.create(person)
 ```
 
 ## 寄生式继承 (Parasitic Inheritance)
@@ -138,10 +143,6 @@ const person = {
 
 const anotherPerson = createAnother(person)
 anotherPerson.sayHi() // 'hi'
-
-// ECMAScript5 通过新增 Object.create()方法规范化了原型式继承。 这个方法接收两个参数: 一个用作新对象原型的对象和(可选的)一个为新对象定义额外属性的对象。
-
-const anotherPerson = Object.create(person)
 ```
 
 ## 寄生组合式继承 (Parasitic Combination Inheritance)
