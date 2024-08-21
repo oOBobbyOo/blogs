@@ -29,6 +29,7 @@ declare module 'vue-router/auto-routes' {
     '/posts/git-commands': RouteRecordInfo<'/posts/git-commands', '/posts/git-commands', Record<never, never>, Record<never, never>>,
     '/posts/new-create-instanceof': RouteRecordInfo<'/posts/new-create-instanceof', '/posts/new-create-instanceof', Record<never, never>, Record<never, never>>,
     '/posts/prototype-extends': RouteRecordInfo<'/posts/prototype-extends', '/posts/prototype-extends', Record<never, never>, Record<never, never>>,
+    '/posts/react-hook': RouteRecordInfo<'/posts/react-hook', '/posts/react-hook', Record<never, never>, Record<never, never>>,
     '/posts/set-map': RouteRecordInfo<'/posts/set-map', '/posts/set-map', Record<never, never>, Record<never, never>>,
     '/posts/vue-react-perf': RouteRecordInfo<'/posts/vue-react-perf', '/posts/vue-react-perf', Record<never, never>, Record<never, never>>,
     '/posts/web-storage': RouteRecordInfo<'/posts/web-storage', '/posts/web-storage', Record<never, never>, Record<never, never>>,
