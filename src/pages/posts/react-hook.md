@@ -12,6 +12,9 @@ art: particles
 
 ```jsx
 const [state, setState] = useState(initialState)
+
+// or
+const [state, setState] = useState(() => initialState)
 ```
 
 ## useEffect
@@ -90,7 +93,29 @@ const value = useContext(MyContext)
 
 > [useReducer](https://react.dev/reference/react/useReducer)：用来管理复杂的状态逻辑，类似于 Redux 的 reducer。
 
-```jsx
+```tsx
+interface IState {
+  count: number
+}
+
+interface IAction {
+  type: 'increment' | 'decrement'
+  payload: number
+}
+
+const initialState: IState = { count: 0 }
+
+function reducer(state: IState, action: IAction) {
+  switch (action.type) {
+    case 'increment':
+      return { count: state.count + action.payload }
+    case 'decrement':
+      return { count: state.count - action.payload }
+    default:
+      return state
+  }
+}
+
 const [state, dispatch] = useReducer(reducer, initialState)
 ```
 
@@ -136,14 +161,11 @@ const state = useSyncExternalStore(subscribe, getSnapshot, getServerSnapshot)
 
 ## useInsertionEffect
 
-> [useInsertionEffect](https://react.dev/reference/react/useInsertionEffect)：用来在所有 DOM 变更后同步调用 effect。在浏览器绘制之前，useInsertionEffect 内部的更新计划将被同步刷新。
+> [useInsertionEffect](https://react.dev/reference/react/useInsertionEffect)：主要是解决 CSS-in-JS 在渲染中注入样式的性能问题。useInsertionEffect 执行 -> useLayoutEffect 执行 -> useEffect 执行，可以看到 useInsertionEffect 执行时机要比 useLayoutEffect 提前，useLayoutEffect 执行的时候 DOM 已经更新了，但是在 useInsertionEffect 的执行的时候，DOM 还没有更新。
 
 ```jsx
 useInsertionEffect(() => {
-  // 在所有 DOM 变更后同步调用 effect
-  return () => {
-    // 在组件卸载前执行
-  }
+  // ... inject <style> tags here ...
 }, [dependencies])
 ```
 
