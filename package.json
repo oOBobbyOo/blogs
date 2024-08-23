@@ -52,6 +52,7 @@
     "lint-staged": "^15.2.6",
     "markdown-it-anchor": "^9.0.1",
     "markdown-it-link-attributes": "^4.0.1",
+    "markdown-it-magic-link": "^0.1.4",
     "shiki": "^1.6.0",
     "simple-git-hooks": "^2.11.1",
     "typescript": "^5.2.2",

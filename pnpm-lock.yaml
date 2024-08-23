@@ -123,6 +123,9 @@ importers:
       markdown-it-link-attributes:
         specifier: ^4.0.1
         version: 4.0.1
+      markdown-it-magic-link:
+        specifier: ^0.1.4
+        version: 0.1.4
       shiki:
         specifier: ^1.6.0
         version: 1.6.0
@@ -2126,6 +2129,9 @@ packages:
 
   markdown-it-link-attributes@4.0.1:
     resolution: {integrity: sha512-pg5OK0jPLg62H4k7M9mRJLT61gUp9nvG0XveKYHMOOluASo9OEF13WlXrpAp2aj35LbedAy3QOCgQCw0tkLKAQ==}
+
+  markdown-it-magic-link@0.1.4:
+    resolution: {integrity: sha512-Y0CgJVtqdGGeWJ+8bN+eBEr2q2ugmf5AMJWSbxBpmGcqARbKBB62biB7LwkoxtbddlmVkACYBFyjlMP/SzYlzg==}
 
   markdown-it@14.1.0:
     resolution: {integrity: sha512-a54IwgWPaeBCAAsv13YgmALOF1elABB08FxO9i+r4VFk5Vl4pKokRPeX8u5TCgSsPi6ec1otfLjdOpVcgbpshg==}
@@ -5271,6 +5277,10 @@ snapshots:
       markdown-it: 14.1.0
 
   markdown-it-link-attributes@4.0.1: {}
+
+  markdown-it-magic-link@0.1.4:
+    dependencies:
+      markdown-it: 14.1.0
 
   markdown-it@14.1.0:
     dependencies:
