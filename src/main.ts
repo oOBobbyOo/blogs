@@ -2,6 +2,7 @@ import { ViteSSG } from 'vite-ssg'
 import { routes } from 'vue-router/auto-routes'
 import { setupRouterScroller } from 'vue-router-better-scroller'
 import NProgress from 'nprogress'
+import { createPinia } from 'pinia'
 import App from './App.vue'
 
 import '@unocss/reset/tailwind.css'
@@ -14,7 +15,9 @@ export const createApp = ViteSSG(
     routes,
     base: import.meta.env.BASE_URL,
   },
-  ({ router, isClient }) => {
+  ({ router, app, isClient }) => {
+    app.use(createPinia())
+
     if (isClient) {
       const html = document.querySelector('html')!
       setupRouterScroller(router, {
