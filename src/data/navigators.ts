@@ -51,6 +51,72 @@ const vue: Nav[] = [
     desc: '基于 Rust 的 JavaScript 快速打包器',
     icon: 'https://rolldown.rs/rolldown-round.svg',
   },
+  {
+    name: 'Element Plus',
+    link: 'https://element-plus.org/zh-CN/',
+    desc: '基于 Vue 3，面向设计师和开发者的组件库',
+    icon: 'https://element-plus.org/images/element-plus-logo-small.svg',
+  },
+  {
+    name: 'Ant Design Vue',
+    link: 'https://www.antdv.com/',
+    desc: 'Ant Design 的 Vue 实现，用于构建企业级后台产品',
+    icon: 'https://next.antdv.com/assets/logo.1ef800a8.svg',
+  },
+  {
+    name: 'Arco Design Vue',
+    link: 'https://arco.design/vue/docs/start',
+    desc: '字节跳动出品的企业级设计系统',
+    icon: 'https://unpkg.byted-static.com/latest/byted/arco-config/assets/favicon.ico',
+  },
+  {
+    name: 'TDesign Vue Next',
+    link: 'https://tdesign.tencent.com/vue-next/overview',
+    desc: 'TDesign 适配桌面端的组件库',
+    icon: 'https://cdc.cdn-go.cn/tdc/latest/images/tdesign.svg',
+  },
+  {
+    name: 'Naive UI',
+    link: 'https://www.naiveui.com/zh-CN/os-theme',
+    desc: '一个 Vue 3 组件库，提供了一套美观、易用、高性能的组件',
+    icon: 'https://www.naiveui.com/assets/naivelogo-BdDVTUmz.svg',
+  },
+  {
+    name: 'DevUI',
+    link: 'https://devui.design/',
+    desc: '面向企业中后台产品的开源前端解决方案',
+    icon: 'https://devui.design/assets/img/footer/logo.svg',
+  },
+  {
+    name: 'Vuetify',
+    link: 'https://vuetifyjs.com/zh-Hans/',
+    desc: '基于 Vue.js 3 的 Material Design 组件框架',
+    icon: 'https://vuetifyjs.com/favicon.ico',
+  },
+  {
+    name: 'View UI Plus',
+    link: 'https://www.iviewui.com/',
+    desc: '基于 Vue.js 3 的企业级 UI 组件库和中后台系统解决方案',
+    icon: 'https://file.iviewui.com/view-design-logo.png',
+  },
+  {
+    name: 'Vant',
+    link: 'https://vant-ui.github.io/vant/#/zh-CN',
+    desc: '轻量、可定制的移动端 Vue 组件库',
+    icon: 'https://fastly.jsdelivr.net/npm/@vant/assets/logo.png',
+  },
+  {
+    name: 'NutUI',
+    link: 'https://nutui.jd.com/#/zh-CN',
+    desc: '京东风格的轻量级移动端 Vue 组件库',
+    icon: 'https://img14.360buyimg.com/imagetools/jfs/t1/167902/2/8762/791358/603742d7E9b4275e3/e09d8f9a8bf4c0ef.png',
+  },
+  {
+    name: 'Cube UI',
+    link: 'https://didi.github.io/cube-ui/#/zh-CN',
+    desc: '滴滴开源的基于 Vue.js 的移动端组件库',
+    icon: 'https://webapp.didistatic.com/static/webapp/shield/Cube-UI_logo.ico',
+  },
 ]
 
 const react: Nav[] = [
