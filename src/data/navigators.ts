@@ -210,6 +210,36 @@ const react: Nav[] = [
     desc: 'React 动画库',
     icon: 'i-logos-react',
   },
+  {
+    name: 'NextUI',
+    link: 'https://nextui.org/',
+    desc: 'NextUI 是 React 的 UI 库，可帮助您构建美观且易于访问的用户界面。在 Tailwind CSS 和 React Aria 之上创建。NextUI 的主要目标是简化开发流程，提供美观且适应性强的系统设计，以增强用户体验。',
+    icon: 'https://nextui.org/favicon.ico',
+  },
+  {
+    name: 'Antd Design',
+    link: 'https://ant.design/',
+    desc: 'Ant Design 是一套企业级 UI 设计语言和 React 组件库',
+    icon: 'i-devicon-antdesign',
+  },
+  {
+    name: 'Ant Design Mobile',
+    link: 'https://mobile.ant.design/',
+    desc: '探索移动端 Web 的极致体验',
+    icon: 'https://gw.alipayobjects.com/zos/bmw-prod/69a27fcc-ce52-4f27-83f1-c44541e9b65d.svg',
+  },
+  {
+    name: 'Semi Design',
+    link: 'https://semi.design/',
+    desc: 'Semi Design 是一个设计系统，它定义了一套中后台设计与前端基础组件，帮助我们更容易地创造更加一致的用户体验。',
+    icon: 'https://lf9-static.semi.design/obj/semi-tos/images/favicon.ico',
+  },
+  {
+    name: 'Arco Design React',
+    link: 'https://arco.design/react',
+    desc: '字节跳动出品的企业级设计系统',
+    icon: 'https://unpkg.byted-static.com/latest/byted/arco-config/assets/favicon.ico',
+  },
 ]
 
 const css: Nav[] = [

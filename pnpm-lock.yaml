@@ -45,6 +45,9 @@ importers:
       '@iconify-json/carbon':
         specifier: ^1.1.35
         version: 1.1.35
+      '@iconify-json/devicon':
+        specifier: ^1.2.0
+        version: 1.2.0
       '@iconify-json/iconoir':
         specifier: ^1.1.44
         version: 1.1.44
@@ -570,6 +573,9 @@ packages:
 
   '@iconify-json/carbon@1.1.35':
     resolution: {integrity: sha512-zKqioWceqFRiLJvxpjcCpVP3j2YcokYshlbwSAHBhOih5XNUymUS3hm1kpV4KljMI1xWH96UcozHaaf6x4YzdA==}
+
+  '@iconify-json/devicon@1.2.0':
+    resolution: {integrity: sha512-SIXfetfS8uSC5oZasGn0FtPSIeryriUNXK2kqvMFK2zeSKTRojbsubLdjmxUJcJ5dlBv3M6nVTB+P3u8jlckLA==}
 
   '@iconify-json/iconoir@1.1.44':
     resolution: {integrity: sha512-XZZ6+nIgS3BUWTmIvZ1Um/TZcUsOEVDGOTZ50hihoTWYjfLLmPlxS/jxrTTpjJO/98wbyiDz4WOXFGqBrXMLPw==}
@@ -3493,6 +3499,10 @@ snapshots:
   '@humanwhocodes/retry@0.3.0': {}
 
   '@iconify-json/carbon@1.1.35':
+    dependencies:
+      '@iconify/types': 2.0.0
+
+  '@iconify-json/devicon@1.2.0':
     dependencies:
       '@iconify/types': 2.0.0
 
