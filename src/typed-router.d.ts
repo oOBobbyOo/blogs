@@ -24,6 +24,7 @@ declare module 'vue-router/auto-routes' {
     '/posts/': RouteRecordInfo<'/posts/', '/posts', Record<never, never>, Record<never, never>>,
     '/posts/browser-cache': RouteRecordInfo<'/posts/browser-cache', '/posts/browser-cache', Record<never, never>, Record<never, never>>,
     '/posts/call-apply-bind': RouteRecordInfo<'/posts/call-apply-bind', '/posts/call-apply-bind', Record<never, never>, Record<never, never>>,
+    '/posts/commonly-direcives': RouteRecordInfo<'/posts/commonly-direcives', '/posts/commonly-direcives', Record<never, never>, Record<never, never>>,
     '/posts/curry': RouteRecordInfo<'/posts/curry', '/posts/curry', Record<never, never>, Record<never, never>>,
     '/posts/debounce-throttle': RouteRecordInfo<'/posts/debounce-throttle', '/posts/debounce-throttle', Record<never, never>, Record<never, never>>,
     '/posts/git-commands': RouteRecordInfo<'/posts/git-commands', '/posts/git-commands', Record<never, never>, Record<never, never>>,
