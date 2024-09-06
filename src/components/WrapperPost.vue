@@ -32,7 +32,7 @@ const ArtComponent = computed(() => {
   <ClientOnly v-if="ArtComponent">
     <component :is="ArtComponent" />
   </ClientOnly>
-  <div v-if="frontmatter.display ?? frontmatter.title" class="m-auto mb-8 prose" :class="[frontmatter.wrapperClass]">
+  <div v-if="frontmatter.display ?? frontmatter.title" class="prose m-auto mb-8" :class="[frontmatter.wrapperClass]">
     <h1 class="mb-0 slide-enter-50">
       {{ frontmatter.display ?? frontmatter.title }}
     </h1>
@@ -61,7 +61,7 @@ const ArtComponent = computed(() => {
   <article ref="content" :class="[frontmatter.tocAlwaysOn ? 'toc-always-on' : '', frontmatter.class]">
     <slot />
   </article>
-  <div v-if="route.path !== '/'" class="slide-enter m-auto mb-8 mt-8 animate-delay-500 prose print:hidden">
+  <div v-if="route.path !== '/'" class="slide-enter prose m-auto mb-8 mt-8 animate-delay-500 print:hidden">
     <span font-mono op50>> </span>
     <RouterLink
       :to="route.path.split('/').slice(0, -1).join('/') || '/'" class="font-mono op50 hover:op75"
