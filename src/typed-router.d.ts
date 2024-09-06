@@ -32,6 +32,7 @@ declare module 'vue-router/auto-routes' {
     '/posts/react-hook': RouteRecordInfo<'/posts/react-hook', '/posts/react-hook', Record<never, never>, Record<never, never>>,
     '/posts/set-map': RouteRecordInfo<'/posts/set-map', '/posts/set-map', Record<never, never>, Record<never, never>>,
     '/posts/vue-react-perf': RouteRecordInfo<'/posts/vue-react-perf', '/posts/vue-react-perf', Record<never, never>, Record<never, never>>,
+    '/posts/vue3-directive': RouteRecordInfo<'/posts/vue3-directive', '/posts/vue3-directive', Record<never, never>, Record<never, never>>,
     '/posts/web-storage': RouteRecordInfo<'/posts/web-storage', '/posts/web-storage', Record<never, never>, Record<never, never>>,
     '/projects': RouteRecordInfo<'/projects', '/projects', Record<never, never>, Record<never, never>>,
   }
