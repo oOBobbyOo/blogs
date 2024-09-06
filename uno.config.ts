@@ -2,7 +2,7 @@ import {
   defineConfig,
   presetAttributify,
   presetIcons,
-  presetTypography,
+  // presetTypography,
   presetUno,
   presetWebFonts,
   transformerDirectives,
@@ -34,7 +34,7 @@ export default defineConfig({
         'vertical-align': 'text-bottom',
       },
     }),
-    presetTypography(),
+    // presetTypography(),
     presetWebFonts({
       fonts: {
         sans: 'Inter:400,600,800',
