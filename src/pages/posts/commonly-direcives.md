@@ -73,6 +73,77 @@ async function handleClick(this: any) {
 export default copy
 ```
 
+## v-debounce
+
+```ts
+import type { Directive, DirectiveBinding } from 'vue'
+
+interface ElType extends HTMLElement {
+  _handleClick: () => any
+}
+
+const debounce: Directive = {
+  mounted(el: ElType, binding: DirectiveBinding) {
+    if (typeof binding.value !== 'function') {
+      throw new TypeError('callback must be a function')
+    }
+    let timer: NodeJS.Timeout | null = null
+    el._handleClick = function () {
+      if (timer) {
+        clearInterval(timer)
+      }
+      timer = setTimeout(() => {
+        binding.value()
+      }, 500)
+    }
+    el.addEventListener('click', el._handleClick)
+  },
+  beforeUnmount(el: ElType) {
+    el.removeEventListener('click', el._handleClick)
+  }
+}
+
+export default debounce
+```
+
+## v-throttle
+
+```ts
+import type { Directive, DirectiveBinding } from 'vue'
+
+interface ElType extends HTMLElement {
+  _handleClick: () => any
+  disabled: boolean
+}
+
+const throttle: Directive = {
+  mounted(el: ElType, binding: DirectiveBinding) {
+    if (typeof binding.value !== 'function') {
+      throw new TypeError('callback must be a function')
+    }
+    let timer: NodeJS.Timeout | null = null
+    el._handleClick = function () {
+      if (timer) {
+        clearTimeout(timer)
+      }
+      if (!el.disabled) {
+        el.disabled = true
+        binding.value()
+        timer = setTimeout(() => {
+          el.disabled = false
+        }, 1000)
+      }
+    }
+    el.addEventListener('click', el._handleClick)
+  },
+  beforeUnmount(el: ElType) {
+    el.removeEventListener('click', el._handleClick)
+  }
+}
+
+export default throttle
+```
+
 ## v-draggable
 
 ```ts
