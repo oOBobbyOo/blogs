@@ -27,6 +27,7 @@ declare module 'vue-router/auto-routes' {
     '/posts/commonly-direcives': RouteRecordInfo<'/posts/commonly-direcives', '/posts/commonly-direcives', Record<never, never>, Record<never, never>>,
     '/posts/curry': RouteRecordInfo<'/posts/curry', '/posts/curry', Record<never, never>, Record<never, never>>,
     '/posts/debounce-throttle': RouteRecordInfo<'/posts/debounce-throttle', '/posts/debounce-throttle', Record<never, never>, Record<never, never>>,
+    '/posts/deep-clone': RouteRecordInfo<'/posts/deep-clone', '/posts/deep-clone', Record<never, never>, Record<never, never>>,
     '/posts/git-commands': RouteRecordInfo<'/posts/git-commands', '/posts/git-commands', Record<never, never>, Record<never, never>>,
     '/posts/new-create-instanceof': RouteRecordInfo<'/posts/new-create-instanceof', '/posts/new-create-instanceof', Record<never, never>, Record<never, never>>,
     '/posts/prototype-extends': RouteRecordInfo<'/posts/prototype-extends', '/posts/prototype-extends', Record<never, never>, Record<never, never>>,

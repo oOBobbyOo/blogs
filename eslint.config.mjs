@@ -15,6 +15,8 @@ export default antfu(
     rules: {
       'vue/no-v-text-v-html-on-component': 'off',
       'no-extend-native': 'off',
+      'no-prototype-builtins': 'off',
+      'prefer-const': 'off',
       '@typescript-eslint/no-this-alias': 'off',
     },
   },
