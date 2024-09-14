@@ -120,6 +120,7 @@ export default defineConfig({
             'Nuxt': 'https://github.com/nuxt/nuxt',
             'Pinia': 'https://github.com/vuejs/pinia',
             'VueUse': 'https://github.com/vueuse/vueuse',
+            'Vitest': 'https://github.com/vitest-dev/vitest',
 
             'Vite': 'https://github.com/vitejs/vite',
             'Webpack': 'https://github.com/webpack/webpack',
@@ -137,10 +138,14 @@ export default defineConfig({
             'Less': 'https://github.com/less/less.js',
             'Stylus': 'https://github.com/stylus/stylus',
             'CSS Modules': 'https://github.com/css-modules/css-modules',
+
             'Pnpm': 'https://github.com/pnpm/pnpm',
             'Git': 'https://github.com/git/git',
             'Eslint': 'https://github.com/eslint/eslint',
             'Prettier': 'https://github.com/prettier/prettier',
+            'Husky': 'https://github.com/typicode/husky',
+            'Lint-staged': 'https://github.com/okonet/lint-staged',
+            'Commitlint': 'https://github.com/conventional-changelog/commitlint',
 
           },
           imageOverrides: [
