@@ -22,6 +22,7 @@ declare module 'vue' {
     PostsList: typeof import('./components/PostsList.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    TimeCapsule: typeof import('./components/TimeCapsule.vue')['default']
     VisActor: typeof import('./components/Icons/VisActor.vue')['default']
     WrapperPost: typeof import('./components/WrapperPost.vue')['default']
   }

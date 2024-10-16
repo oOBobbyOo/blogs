@@ -27,6 +27,7 @@ declare global {
   const createTemplatePromise: typeof import('@vueuse/core')['createTemplatePromise']
   const createUnrefFn: typeof import('@vueuse/core')['createUnrefFn']
   const customRef: typeof import('vue')['customRef']
+  const dayText: typeof import('./composables/day')['dayText']
   const debouncedRef: typeof import('@vueuse/core')['debouncedRef']
   const debouncedWatch: typeof import('@vueuse/core')['debouncedWatch']
   const defineAsyncComponent: typeof import('vue')['defineAsyncComponent']
@@ -42,6 +43,10 @@ declare global {
   const getActiveHead: typeof import('@unhead/vue')['getActiveHead']
   const getCurrentInstance: typeof import('vue')['getCurrentInstance']
   const getCurrentScope: typeof import('vue')['getCurrentScope']
+  const getCurrentTime: typeof import('./composables/day')['getCurrentTime']
+  const getDaysUntil: typeof import('./composables/day')['getDaysUntil']
+  const getTimeCapsule: typeof import('./composables/day')['getTimeCapsule']
+  const getTimeDifference: typeof import('./composables/day')['getTimeDifference']
   const getYear: typeof import('./composables/day')['getYear']
   const h: typeof import('vue')['h']
   const ignorableWatch: typeof import('@vueuse/core')['ignorableWatch']
@@ -347,6 +352,7 @@ declare module 'vue' {
     readonly createTemplatePromise: UnwrapRef<typeof import('@vueuse/core')['createTemplatePromise']>
     readonly createUnrefFn: UnwrapRef<typeof import('@vueuse/core')['createUnrefFn']>
     readonly customRef: UnwrapRef<typeof import('vue')['customRef']>
+    readonly dayText: UnwrapRef<typeof import('./composables/day')['dayText']>
     readonly debouncedRef: UnwrapRef<typeof import('@vueuse/core')['debouncedRef']>
     readonly debouncedWatch: UnwrapRef<typeof import('@vueuse/core')['debouncedWatch']>
     readonly defineAsyncComponent: UnwrapRef<typeof import('vue')['defineAsyncComponent']>
@@ -360,6 +366,10 @@ declare module 'vue' {
     readonly getActiveHead: UnwrapRef<typeof import('@unhead/vue')['getActiveHead']>
     readonly getCurrentInstance: UnwrapRef<typeof import('vue')['getCurrentInstance']>
     readonly getCurrentScope: UnwrapRef<typeof import('vue')['getCurrentScope']>
+    readonly getCurrentTime: UnwrapRef<typeof import('./composables/day')['getCurrentTime']>
+    readonly getDaysUntil: UnwrapRef<typeof import('./composables/day')['getDaysUntil']>
+    readonly getTimeCapsule: UnwrapRef<typeof import('./composables/day')['getTimeCapsule']>
+    readonly getTimeDifference: UnwrapRef<typeof import('./composables/day')['getTimeDifference']>
     readonly getYear: UnwrapRef<typeof import('./composables/day')['getYear']>
     readonly h: UnwrapRef<typeof import('vue')['h']>
     readonly ignorableWatch: UnwrapRef<typeof import('@vueuse/core')['ignorableWatch']>
@@ -655,6 +665,7 @@ declare module '@vue/runtime-core' {
     readonly createTemplatePromise: UnwrapRef<typeof import('@vueuse/core')['createTemplatePromise']>
     readonly createUnrefFn: UnwrapRef<typeof import('@vueuse/core')['createUnrefFn']>
     readonly customRef: UnwrapRef<typeof import('vue')['customRef']>
+    readonly dayText: UnwrapRef<typeof import('./composables/day')['dayText']>
     readonly debouncedRef: UnwrapRef<typeof import('@vueuse/core')['debouncedRef']>
     readonly debouncedWatch: UnwrapRef<typeof import('@vueuse/core')['debouncedWatch']>
     readonly defineAsyncComponent: UnwrapRef<typeof import('vue')['defineAsyncComponent']>
@@ -668,6 +679,10 @@ declare module '@vue/runtime-core' {
     readonly getActiveHead: UnwrapRef<typeof import('@unhead/vue')['getActiveHead']>
     readonly getCurrentInstance: UnwrapRef<typeof import('vue')['getCurrentInstance']>
     readonly getCurrentScope: UnwrapRef<typeof import('vue')['getCurrentScope']>
+    readonly getCurrentTime: UnwrapRef<typeof import('./composables/day')['getCurrentTime']>
+    readonly getDaysUntil: UnwrapRef<typeof import('./composables/day')['getDaysUntil']>
+    readonly getTimeCapsule: UnwrapRef<typeof import('./composables/day')['getTimeCapsule']>
+    readonly getTimeDifference: UnwrapRef<typeof import('./composables/day')['getTimeDifference']>
     readonly getYear: UnwrapRef<typeof import('./composables/day')['getYear']>
     readonly h: UnwrapRef<typeof import('vue')['h']>
     readonly ignorableWatch: UnwrapRef<typeof import('@vueuse/core')['ignorableWatch']>

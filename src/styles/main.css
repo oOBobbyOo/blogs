@@ -7,6 +7,8 @@
   --c-bg: #fff;
   --c-scrollbar: #eee;
   --c-scrollbar-hover: #bbb;
+  --c-progress-bg: #fafafa;
+  --c-progress-bar: #8882;
 }
 
 html {
@@ -19,6 +21,8 @@ html.dark {
   --c-bg: #050505;
   --c-scrollbar: #111;
   --c-scrollbar-hover: #222;
+  --c-progress-bg: #0e0e0e;
+  --c-progress-bar: #8888;
 }
 
 body {
