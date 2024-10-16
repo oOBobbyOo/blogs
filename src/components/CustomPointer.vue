@@ -40,4 +40,13 @@ const pointStyles = computed<Record<string, string | number>>(() => ({
     width 0.05s,
     height 0.05s;
 }
+
+.dark {
+  .cursor {
+    background: rgba(255, 255, 255, 0.2);
+  }
+  .pointer {
+    background: rgba(255, 255, 255, 0.5);
+  }
+}
 </style>
