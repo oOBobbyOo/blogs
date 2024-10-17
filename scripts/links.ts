@@ -18,8 +18,14 @@ export const linksMap = {
   'Esbuild': 'https://github.com/evanw/esbuild',
   'Rollup': 'https://github.com/rollup/rollup',
 
-  'Javascript': 'https://github.com/tc39',
   'TypeScript': 'https://github.com/microsoft/TypeScript',
+  'Javascript': 'https://github.com/tc39',
+  'JQuery': 'https://github.com/jquery/jquery',
+
+  'Echarts': 'https://github.com/apache/echarts',
+  'Antv': 'https://github.com/antvis',
+  'ant-design-charts': 'https://github.com/ant-design/ant-design-charts',
+  'VisActor': 'https://github.com/visactor',
 
   'UnoCSS': 'https://github.com/unocss/unocss',
   'TailwindCSS': 'https://github.com/tailwindlabs/tailwindcss',
@@ -30,18 +36,16 @@ export const linksMap = {
   'Stylus': 'https://github.com/stylus/stylus',
   'CSS Modules': 'https://github.com/css-modules/css-modules',
 
-  'Pnpm': 'https://github.com/pnpm/pnpm',
-  'Git': 'https://github.com/git/git',
   'Eslint': 'https://github.com/eslint/eslint',
   'Prettier': 'https://github.com/prettier/prettier',
   'Husky': 'https://github.com/typicode/husky',
   'Lint-staged': 'https://github.com/okonet/lint-staged',
   'Commitlint': 'https://github.com/conventional-changelog/commitlint',
 
-  'Echarts': 'https://github.com/apache/echarts',
-  'Antv': 'https://github.com/antvis',
-  'ant-design-charts': 'https://github.com/ant-design/ant-design-charts',
-  'VisActor': 'https://github.com/visactor',
+  'Pnpm': 'https://github.com/pnpm/pnpm',
+  'Git': 'https://github.com/git/git',
+  'VSCode': 'https://github.com/microsoft/vscode',
+  'Iterm2': 'https://github.com/gnachman/iTerm2',
 }
 
 export const imageOverrides = [
@@ -52,4 +56,5 @@ export const imageOverrides = [
   ['https://github.com/nuxt/nuxt', 'https://nuxt.com/assets/design-kit/icon-green.svg'],
   ['https://github.com/vuejs/pinia', 'https://pinia.vuejs.org/logo.svg'],
   ['https://github.com/vitejs/vite', 'https://vitejs.dev/logo.svg'],
+  ['https://github.com/microsoft/vscode', 'https://code.visualstudio.com/favicon.ico'],
 ]
