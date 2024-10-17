@@ -12,33 +12,28 @@ const pointStyles = computed<Record<string, string | number>>(() => ({
 </template>
 
 <style scoped lang="less">
-.cursor {
+.cursor,
+.pointer {
   position: fixed;
   top: 0;
   left: 0;
   z-index: 999999;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.cursor {
   width: 30px;
   height: 30px;
-  border-radius: 50%;
   background: rgba(0, 0, 0, 0.2);
-  pointer-events: none;
-  transition: 0.1s ease-out;
+  transition: 0.08s ease-in-out;
 }
 
 .pointer {
-  position: fixed;
-  left: 0;
-  top: 0;
-  z-index: 999999;
   width: 10px;
   height: 10px;
-  border-radius: 50%;
   background-color: rgba(0, 0, 0, 0.5);
-  pointer-events: none;
-  transition:
-    background 0.05s,
-    width 0.05s,
-    height 0.05s;
+  transition: 0.04s ease-in-out;
 }
 
 .dark {
