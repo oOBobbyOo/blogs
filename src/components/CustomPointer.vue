@@ -7,8 +7,8 @@ const pointStyles = computed<Record<string, string | number>>(() => ({
 </script>
 
 <template>
-  <div v-if="!isMobile" class="cursor" :style="pointStyles" />
-  <div v-if="!isMobile" class="pointer" :style="pointStyles" />
+  <div class="cursor" :style="pointStyles" />
+  <div class="pointer" :style="pointStyles" />
 </template>
 
 <style scoped lang="less">

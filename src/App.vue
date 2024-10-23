@@ -8,5 +8,5 @@ const route = useRoute()
     <RouterView />
     <Footer :key="route.path" />
   </main>
-  <CustomPointer />
+  <CustomPointer v-if="!isMobile" />
 </template>
