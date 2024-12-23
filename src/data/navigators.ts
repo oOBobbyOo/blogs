@@ -166,7 +166,7 @@ const react: Nav[] = [
     name: 'Zustand',
     link: 'https://zustand-demo.pmnd.rs/',
     desc: 'Zustand 是一个用于构建快速、可扩展的状态管理的 React Hook',
-    icon: 'https://docs.pmnd.rs/_next/static/media/zustand-icon.8507f6a0.png',
+    icon: 'https://github.com/pmndrs/zustand/raw/main/docs/favicon.ico',
   },
   {
     name: 'Jotai',
@@ -199,10 +199,10 @@ const react: Nav[] = [
     icon: 'i-logos-react-spring',
   },
   {
-    name: 'Framer Motion',
-    link: 'https://motionone.org/',
-    desc: 'Framer Motion 是为React 提供的动作库',
-    icon: 'https://www.framer.com/images/favicons/iOS/120.png',
+    name: 'Motion',
+    link: 'https://motion.dev/',
+    desc: '适用于 JavaScript 和 React 的现代动画库',
+    icon: 'https://framerusercontent.com/images/FEF0Xp0qllCZsG1uilpmdZAzD8.png',
   },
   {
     name: 'React Transition Group',
@@ -239,6 +239,45 @@ const react: Nav[] = [
     link: 'https://arco.design/react',
     desc: '字节跳动出品的企业级设计系统',
     icon: 'https://unpkg.byted-static.com/latest/byted/arco-config/assets/favicon.ico',
+  },
+]
+
+const crossPlatform: Nav[] = [
+  {
+    name: 'UniApp',
+    link: 'https://uniapp.dcloud.io/',
+    desc: '使用 Vue.js 构建跨平台应用程序',
+    icon: 'https://qiniu-web-assets.dcloud.net.cn/unidoc/zh/icon.png',
+  },
+  {
+    name: 'Electron',
+    link: 'https://www.electronjs.org/',
+    desc: '使用 JavaScript、HTML 和 CSS 构建跨平台桌面应用程序',
+    icon: 'https://www.electronjs.org/assets/img/favicon.ico',
+  },
+  {
+    name: 'React Native',
+    link: 'https://reactnative.dev/',
+    desc: '使用 React 构建原生应用程序',
+    icon: 'i-logos-react',
+  },
+  {
+    name: 'Flutter',
+    link: 'https://flutter.dev/',
+    desc: '使用 Dart 构建跨平台应用程序',
+    icon: 'i-logos-flutter',
+  },
+  {
+    name: 'Taro',
+    link: 'https://docs.taro.zone/docs/',
+    desc: '多端统一开发框架，支持使用 React/Vue/Nerv 等框架来开发微信/京东/百度/支付宝/字节跳动/QQ/飞书/快手小程序/H5/RN等应用',
+    icon: 'https://docs.taro.zone/img/taro-logo_180.png',
+  },
+  {
+    name: 'Tauri',
+    link: 'https://v2.tauri.app/',
+    desc: '创建小型、快速、安全、跨平台应用程序',
+    icon: 'i-logos-tauri',
   },
 ]
 
@@ -383,6 +422,7 @@ const ai: Nav[] = [
 const navigator: Navigator = {
   'Vue Ecosystem': vue,
   'React Ecosystem': react,
+  'Cross Platform': crossPlatform,
   'CSS': css,
   'Icons': icons,
   'Charts': charts,
