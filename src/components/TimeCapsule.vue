@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const chineseNewYear = '2025-01-29'
+const chineseNewYear = '2026-02-17'
 const timer = ref()
 const timeData = ref(getTimeCapsule())
 
