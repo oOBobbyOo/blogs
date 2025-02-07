@@ -394,6 +394,12 @@ const charts: Nav[] = [
 
 const ai: Nav[] = [
   {
+    name: 'DeepSeek',
+    link: 'https://www.deepseek.com/',
+    desc: '幻方量化旗下深度求索推出的开源大模型和聊天助手',
+    icon: 'https://www.deepseek.com/favicon.ico',
+  },
+  {
     name: 'ChatGPT',
     link: 'https://chat.openai.com/chat',
     desc: 'ChatGPT，全称聊天生成预训练转换器，是OpenAI开发的人工智能聊天机器人程序，该程序使用基于GPT-3.5、GPT-4、GPT-4o架构的大型语言模型并以强化学习训练。',
